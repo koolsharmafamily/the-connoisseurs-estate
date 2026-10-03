@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
+@theme {
+  --color-parchment: #E8DFCF;
+  --color-parchment-light: #F0E9DC;
+  --color-ivory: #F4EFE6;
+  --color-ivory-light: #FAF7F2;
+  --color-walnut: #35251F;
+  --color-walnut-dark: #211612;
+  --color-oxblood: #4A1F29;
+  --color-oxblood-dark: #2F1219;
+  --color-forest: #25382E;
+  --color-forest-dark: #17241D;
+  --color-brass: #A58A58;
+  --color-brass-light: #C5AB77;
+  --color-brass-dark: #7A643D;
+  --color-charcoal: #211E1B;
+  --color-charcoal-light: #2E2A27;
+  --color-estate-black: #141211;
+  --color-linen: #FAF7F2;
+
+  --font-serif: var(--font-serif), "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #F4EFE6;
+  --text-primary: #211E1B;
+  --border-muted: rgba(53, 37, 31, 0.12);
+  --border-brass: rgba(165, 138, 88, 0.35);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: #211E1B;
+  color: #211E1B;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Subtle Film Grain Texture Overlay */
+.film-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Focus rings with refined brass outline for accessibility */
+*:focus-visible {
+  outline: 2px solid #A58A58 !important;
+  outline-offset: 3px !important;
+}
+
+/* Luxury hairline borders */
+.border-estate {
+  border-color: rgba(53, 37, 31, 0.14);
+}
+
+.border-estate-dark {
+  border-color: rgba(232, 223, 207, 0.12);
+}
+
+.border-brass-subtle {
+  border-color: rgba(165, 138, 88, 0.28);
+}
+
+/* Custom discreet scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #211E1B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #35251F;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A58A58;
+}
+
+/* Editorial selection */
+::selection {
+  background-color: #4A1F29;
+  color: #F4EFE6;
 }
