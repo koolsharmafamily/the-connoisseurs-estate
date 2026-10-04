@@ -71,8 +71,7 @@ export interface AssetManifestItem {
 
 export const SITE_CONFIG = {
   // BRAND IDENTITY
-  // Replace this single value with your personal name whenever you wish:
-  personalName: "[YOUR NAME]",
+  personalName: "Rudrani Tripathi",
   brandTitle: "THE CONNOISSEUR’S ESTATE",
   roleTitle: "Aesthetic Director",
   displayWordmark: "The Connoisseur’s Estate",
@@ -297,10 +296,9 @@ export const SITE_CONFIG = {
     practiceDescription:
       "As Aesthetic Director, I work with a small number of private clients each season to curate their living environments, build cohesive wardrobes of archival pieces and bespoke commissions, and source exceptional decorative arts with documented integrity.",
     stillLifeImage: "/images/director-still-life.jpg",
-    // Replace with "/images/director-portrait.jpg" once you provide your personal portrait:
-    portraitImage: null as string | null,
+    portraitImage: "/images/rudrani-tripathi-portrait.jpg" as string | null,
     directorNote:
-      "To update with your own portrait and biography, simply edit `config/site.ts` and drop your portrait into `/public/images/`.",
+      "Official portrait of Rudrani Tripathi, Aesthetic Director.",
   },
 
   // THE PRIVATE COMMISSION
@@ -358,11 +356,9 @@ export const SITE_CONFIG = {
       "Engagements are strictly limited to ensure uncompromising attention. Responses are provided directly to qualified private inquiries.",
   },
 
-  // CONTACT & DEMO MODE CONFIGURATION
+  // CONTACT CONFIGURATION
   contact: {
-    // If empty or null, the form will operate in an elegant demonstration mode,
-    // providing a full copy-to-clipboard draft of the inquiry without failing silently.
-    recipientEmail: "", // e.g. "curator@connoisseursestate.com"
+    recipientEmail: "rudranitripathi1010@gmail.com",
     advisoryLocations: "Florence · London · Paris · Engagements Worldwide",
     notice: "Private advisory engagements worldwide. By introduction and private commission.",
   },
@@ -462,6 +458,18 @@ export const SITE_CONFIG = {
       attribution: "Studio Curatorial Archive — Architectural Studies",
       curatorialNotes:
         "Demonstrates architectural authenticity and material nuance in the philosophy section.",
+    },
+    {
+      id: "rudrani-tripathi-portrait",
+      filename: "/images/rudrani-tripathi-portrait.jpg",
+      title: "Rudrani Tripathi — Aesthetic Director",
+      role: "The Director Section Official Editorial Portrait",
+      aspectRatio: "4:5",
+      altText:
+        "Editorial portrait of Rudrani Tripathi, Aesthetic Director, against dark fluted walnut millwork.",
+      attribution: "Personal Archive — Rudrani Tripathi",
+      curatorialNotes:
+        "Official executive portrait framing the Director as the unifying aesthetic presence.",
     },
   ] as AssetManifestItem[],
 };
