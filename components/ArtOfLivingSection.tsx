@@ -98,7 +98,7 @@ export default function ArtOfLivingSection({
                     <div
                       role="region"
                       aria-live="polite"
-                      className="absolute z-30 w-72 sm:w-80 p-5 bg-estate-black/95 backdrop-blur-md text-ivory border border-brass/40 shadow-2xl mt-3 -left-36 sm:-left-40 animate-in fade-in zoom-in-95 duration-200"
+                      className="fixed bottom-4 left-4 right-4 z-50 md:absolute md:bottom-auto md:left-auto md:w-80 md:mt-3 md:-left-40 p-5 bg-estate-black/95 backdrop-blur-md text-ivory border border-brass/40 shadow-2xl animate-in fade-in zoom-in-95 duration-200"
                     >
                       <div className="flex items-center justify-between pb-2 border-b border-white/10 mb-3">
                         <span className="text-[10px] font-sans tracking-[0.2em] uppercase text-brass-light font-medium">

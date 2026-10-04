@@ -137,9 +137,10 @@ export default function ArchivalVaultSection({
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between p-3 bg-estate-black/85 backdrop-blur-md border border-white/10 text-[10px] font-sans tracking-widest uppercase text-parchment/80">
                 <span className="flex items-center space-x-1.5">
                   <ZoomIn className="w-3.5 h-3.5 text-brass" />
-                  <span>Hover to magnify velvet pile & lapel construction</span>
+                  <span className="hidden md:inline">Hover to magnify velvet pile & lapel construction</span>
+                  <span className="md:hidden">Archival Weave & Tailoring Detail</span>
                 </span>
-                <span className="text-brass hidden sm:inline">2.5× Loupe</span>
+                <span className="text-brass text-[9px] sm:text-[10px]">2.5× Loupe</span>
               </div>
             </div>
 

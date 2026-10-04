@@ -53,8 +53,8 @@ export default function HeroSection({
         <div className="absolute inset-0 film-grain opacity-40 mix-blend-overlay" />
       </div>
 
-      {/* LAYER 2: SIGNATURE 3D WEBGL PATINATED FRAME (Midground / Right) */}
-      <div className="absolute right-0 top-0 bottom-0 w-full lg:w-3/5 z-10 pointer-events-none flex items-center justify-center lg:justify-end pr-0 lg:pr-12 opacity-90">
+      {/* LAYER 2: SIGNATURE 3D WEBGL PATINATED FRAME (Desktop & Tablet Landscape) */}
+      <div className="hidden lg:flex absolute right-0 top-0 bottom-0 w-3/5 z-10 pointer-events-none items-center justify-end pr-8 xl:pr-14 opacity-95">
         <SignatureScene3D className="w-full h-full max-h-[85vh]" />
       </div>
 
